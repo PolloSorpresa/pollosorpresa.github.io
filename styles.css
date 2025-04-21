@@ -1,5 +1,22 @@
+/* Importación de fuentes de la marca*/
+@font-face {
+    font-family: 'Mindflyers';
+    src: url('Fuentes/Mindflyers\ Comics.otf') format('opentype');
+         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NombreDeLaFuenteBold';
+    src: url('Fuentes/Mindflyers\ Bold.otf') format('woff2');    
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: 'Mindflyers', sans-serif;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -133,6 +150,9 @@ header, footer {
 .image-controller img {
     max-width: 100%; /* Asegurar que la imagen no se desborde */
     max-height: 100%;
+}
+footer{
+    background-color: #422011;
 }
 
 /* ... otros estilos ... */
