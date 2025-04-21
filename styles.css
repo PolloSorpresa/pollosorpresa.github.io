@@ -37,6 +37,21 @@ header, footer {
     background-position: center center;
 }
 
+.banner-deslizaparaver {
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    overflow: hidden; /* Evita desbordamientos */
+    margin: 0 auto; /* Centra el contenedor si es necesario */
+    margin-bottom: 30px;
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+.banner-deslizaparaver img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en línea alrededor de la imagen */
+}
+
 .banner-promocional, .banner-promocional_2 {
     background-color: #ccc;
     padding: 1em;
