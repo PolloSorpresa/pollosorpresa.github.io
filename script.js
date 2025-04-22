@@ -90,7 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('mouseup', handleEnd);
         document.addEventListener('touchend', handleEnd);
 
-        imageAfter.style.clipPath = `inset(0 100% 0 0)`;
-        divisor.style.left = `0%`;
+        imageAfter.style.clipPath = `inset(0 70% 0 0)`;
+        divisor.style.left = `30%`;
+        controllerImage.style.left = `${containerRect.width * 0.3 - controllerWidth / 2}px`;
     });
 });
