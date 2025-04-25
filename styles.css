@@ -61,7 +61,7 @@ header {
 
 .main-container {
     padding: 1em;
-    background: linear-gradient(0deg, #422011, #f3e958); /* Cambia la dirección del degradado */
+    background: linear-gradient(0deg, #f3e958, #422011); /* Cambia la dirección del degradado */
     background-size: 100% 200%; /* Ajusta el tamaño del fondo para el movimiento vertical */
     animation: gradient-animation 8s ease infinite; /* Aplica la animación */
 }
