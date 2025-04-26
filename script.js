@@ -90,8 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('mouseup', handleEnd);
         document.addEventListener('touchend', handleEnd);
 
-        imageAfter.style.clipPath = `inset(0 70% 0 0)`;
-        divisor.style.left = `30%`;
-        controllerImage.style.left = `${containerRect.width * 0.3 - controllerWidth / 2}px`;
+        imageAfter.style.clipPath = `inset(0 85% 0 0)`; // Mantén el clipPath como está
+        divisor.style.left = `15%`; // Posición inicial del divisor
+        
+        // Ajusta la posición del controlador para que coincida con el divisor
+        const divisorLeft = containerRect.width * 0.15; // Calcula la posición del divisor en píxeles
+        controllerImage.style.left = `${divisorLeft - controllerWidth / 2}px`; // Centra el controlador en el divisor
     });
 });
