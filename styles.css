@@ -68,22 +68,12 @@ header img {
 
 .main-container {
     padding: 1em;
-    background: linear-gradient(0deg, #e29404, #422011); /* Cambia la dirección del degradado */
-    background-size: 100% 200%; /* Ajusta el tamaño del fondo para el movimiento vertical */
-    animation: gradient-animation 20s ease infinite; /* Aplica la animación */
-}
-
-/* Definimos la animación */
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 0%; /* Empieza desde la parte superior */
-    }
-    50% {
-        background-position: 0% 100%; /* Mueve el degradado hacia abajo */
-    }
-    100% {
-        background-position: 0% 0%; /* Regresa a la parte superior */
-    }
+    background-image: url('Imagenes/BackgroundPage.png');
+    background-color: #faf8f7;
+    background-repeat: no-repeat; /* Generalmente se usa con cover */
+    background-size: cover;
+    /*Opcional: Centrar la imagen */
+    background-position: center;
 }
 
 .banner-promocional, .banner-promocional_2 {
