@@ -59,7 +59,7 @@ body {
 
 .modal-buttons button,
 .modal-buttons a {
-  width: 100%; /* Los botones ocuparán todo el ancho disponible */
+  width: 80%; /* Los botones ocuparán todo el ancho disponible */
   text-align: center; /* Centra el texto dentro de los botones */
   padding: 10px 20px;
   border: none;
