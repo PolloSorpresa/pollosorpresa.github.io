@@ -49,38 +49,43 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  .modal-buttons {
-    margin-top: 20px;
-  }
-  
-  .modal-buttons button,
-  .modal-buttons a {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  #close-modal {
-    background-color: #e37c1d;
-    color: white;
-  }
-  
-  #go-to-clon {
-    background-color: #412113;
-    color: white;
-  }
-  
-  #close-modal:hover {
-    background-color: #f0c62f;
-  }
-  
-  #go-to-clon:hover {
-    background-color: #e37c1d;
-  }
+ /* Estilo para los botones en la ventana modal */
+.modal-buttons {
+  display: flex;
+  flex-direction: column; /* Apila los botones uno encima del otro */
+  align-items: center; /* Centra los botones horizontalmente */
+  gap: 15px; /* Espaciado vertical entre los botones */
+}
+
+.modal-buttons button,
+.modal-buttons a {
+  width: 100%; /* Los botones ocuparán todo el ancho disponible */
+  text-align: center; /* Centra el texto dentro de los botones */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#close-modal {
+  background-color: #e37c1d;
+  color: white;
+}
+
+#go-to-clon {
+  background-color: #412113;
+  color: white;
+}
+
+#close-modal:hover {
+  background-color: #f0c62f;
+}
+
+#go-to-clon:hover {
+  background-color: #e37c1d;
+}
   
   .modal.show {
     visibility: visible;
