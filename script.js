@@ -97,4 +97,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const divisorLeft = containerRect.width * 0.15; // Calcula la posición del divisor en píxeles
         controllerImage.style.left = `${divisorLeft - controllerWidth / 2}px`; // Centra el controlador en el divisor
     });
+    window.addEventListener("load", () => {
+        const modal = document.getElementById("modal");
+        const closeModalButton = document.getElementById("close-modal");
+      
+        // Show the modal
+        modal.classList.add("show");
+      
+        // Close the modal and stay on the page
+        closeModalButton.addEventListener("click", () => {
+          modal.classList.remove("show");
+        });
+      });
 });
