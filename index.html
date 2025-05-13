@@ -9,6 +9,10 @@
   <body>
     <header>
      <img src="Imagenes/header.png" alt="Descripción de la imagen">
+     <!-- Botón para ir al clon -->
+  <div class="button-container">
+    <a href="index-clon.html" class="btn-clon">Ver menú Unicentro</a>
+  </div>
     </header>
     <main class="main-container">
       <div class="banner-promocional">
@@ -229,6 +233,20 @@
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <script src="script.js"></script>
+
+    <!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>¡Nota aclaratoria!</h2>
+    <p>Tu Tarjeta Cliente Frecuente aplica en todos los puntos:
+      <p>Sede Unicentro: descuentos en una selección especial de productos  con descuento.</p>
+      <p>Sede Principal, Centro y Av. Estudiantes: ¡más productos con beneficio!</p>
+      <p>Revisa el listado y aprovecha  los descuentos.</p>
+    <div class="modal-buttons">
+      <button id="close-modal">Continuar en este menú</button>
+      <a href="index-clon.html" id="go-to-clon">Ir al menú Unicentro</a>
+    </div>
+  </div>
+</div>
   </body>
 </html>
-
