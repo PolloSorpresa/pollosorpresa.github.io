@@ -13,13 +13,99 @@
     font-weight: bold;
     font-style: normal;
 }
+.modal-buttons button {
+    font-family: 'Mindflyers', sans-serif; /* Asegúrate de usar la misma fuente */
+  }
 
+  
 body {
     font-family: 'Mindflyers', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-buttons {
+    margin-top: 20px;
+  }
+  
+  .modal-buttons button,
+  .modal-buttons a {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #close-modal {
+    background-color: #e37c1d;
+    color: white;
+  }
+  
+  #go-to-clon {
+    background-color: #412113;
+    color: white;
+  }
+  
+  #close-modal:hover {
+    background-color: #f0c62f;
+  }
+  
+  #go-to-clon:hover {
+    background-color: #e37c1d;
+  }
+  
+  .modal.show {
+    visibility: visible;
+    opacity: 1;
+  }
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+   
+  }
+  
+  .btn-clon {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #412114;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-clon:hover {
+    background-color: #e47c1d;
+  }
 
 h1,h2{
     color: #422011;
@@ -56,16 +142,6 @@ header img {
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Elimina el espacio en línea alrededor de la imagen */
 }
-/*.main-container {
-    padding: 1em;
-    background-image: url('Imagenes/BackgroundPage.png');
-    /*background-color: #faf8f7;*/
-   /* background-repeat: no-repeat; /* Generalmente se usa con cover */
-   /* background-size: cover;
-    /* Opcional: Centrar la imagen */
-    /*background-position: center;
-}*/
-
 .main-container {
     padding: 1em;
     background-image: url('Imagenes/BackgroundPage.png');
@@ -75,6 +151,7 @@ header img {
     /*Opcional: Centrar la imagen */
     background-position: center;
 }
+
 
 .banner-promocional, .banner-promocional_2 {
     background-color: #f1c72f;
@@ -228,3 +305,4 @@ footer {
     height: auto;
 }
 /* ... otros estilos ... */
+
