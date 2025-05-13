@@ -1,0 +1,243 @@
+/* Importación de fuentes de la marca*/
+@font-face {
+    font-family: 'Mindflyers';
+    src: url('Fuentes/Mindflyers\ Comics.otf') format('opentype');
+         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NombreDeLaFuenteBold';
+    src: url('Fuentes/Mindflyers\ Bold.otf') format('woff2');    
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Mindflyers', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+   
+  }
+  
+  .btn-clon {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #412114;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-clon:hover {
+    background-color: #e47c1d;
+  }
+
+
+h1,h2{
+    color: #422011;
+}
+h3{
+    color: #E37C1E;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+}
+header img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    max-width: 100%; /* Asegura que no exceda el ancho del viewport */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que se vea bien dentro del espacio */
+    display: block; /* Elimina el espacio en línea alrededor de la imagen */
+    overflow: hidden; /* Evita cualquier desbordamiento */
+}
+
+.banner-deslizaparaver {
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    overflow: hidden; /* Evita desbordamientos */
+    margin: 0 auto; /* Centra el contenedor si es necesario */
+    margin-bottom: 30px;
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+.banner-deslizaparaver img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en línea alrededor de la imagen */
+}
+.main-container {
+    padding: 1em;
+    background-image: url('Imagenes/BackgroundPage.png');
+    background-color: #faf8f7;
+    background-repeat: no-repeat; /* Generalmente se usa con cover */
+    background-size: cover;
+    /*Opcional: Centrar la imagen */
+    background-position: center;
+}
+
+
+.banner-promocional, .banner-promocional_2 {
+    background-color: #f1c72f;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+    border-radius: 12px;
+    
+}
+
+.banner-promocional img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en línea alrededor de la imagen */
+}
+
+.card-antesydespues-container {
+    display: flex;
+    flex-direction: column; /* Apilar las tarjetas en móvil */
+    gap: 1em; /* Espacio entre las tarjetas */
+    margin-bottom: 1em;
+    border-radius: 30px;
+    opacity: 100%;
+}
+
+.card-antesydespues {
+    background-color: rgb(128, 128, 128);
+    aspect-ratio: 1 / 1; /* Asegura que sean cuadrados */
+    overflow: hidden; /* Recorta las imágenes que sobresalen */
+    position: relative; /* Para posicionar los elementos internos */
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.comparison-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-before, .image-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-before img, .image-after img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre todo el espacio manteniendo la proporción */
+}
+
+.image-after {
+    clip-path: inset(0 100% 0 0); /* Inicialmente oculta toda la imagen */
+}
+
+.slider {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    -webkit-appearance: none; /* Elimina estilos predeterminados en navegadores WebKit */
+    appearance: none;
+    background: transparent;
+    pointer-events: none; /* Evita que el slider capture eventos */
+    opacity: 0; /* Oculta el slider */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 60px;
+    background: #333;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 60px;
+    background: #333;
+    cursor: pointer;
+    border: none; /* Firefox requiere esto */
+}
+
+/* ... otros estilos ... */
+
+/* ... otros estilos ... */
+
+.divisor {
+    position: absolute;
+    top: 0;
+    left: 0; /* Empieza desde la izquierda */
+    width: 2px;
+    height: 100%;
+    background-color: #ebe2e0;
+    transform: translateX(0); /* Ajusta la transformación */
+    pointer-events: none; /* Evita que el divisor capture eventos */
+    z-index: 10; /* Disminuimos el z-index del divisor */
+}
+
+.image-controller {
+    position: absolute;
+    left: 10px; /* Posición inicial desde la izquierda */
+    top: 50%;
+    transform: translateY(-50%); /* Centrar verticalmente */
+    cursor: grab; /* Indica que se puede arrastrar */
+    z-index: 20; /* Aumentamos el z-index del controlador */
+    height: 60px; /* Ajusta según la altura visual deseada */
+    display: flex;
+    align-items: center; /* Centrar la imagen dentro del contenedor del controlador */
+    justify-content: center;
+}
+
+.image-controller img {
+    max-width: 100%; /* Asegurar que la imagen no se desborde */
+    max-height: 100%;
+}
+footer {
+    background-color: #422011;
+    color: #ebe2e0;
+    padding: 1em;
+    text-align: center; /* Centra el texto y los elementos */
+    margin-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 1em; /* Espacio entre los elementos */
+   
+}
+
+.social-buttons-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+.footer-logo img {
+    max-width: 100px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+/* ... otros estilos ... */
